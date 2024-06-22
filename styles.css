@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmony:wght@400;700&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to bottom, #4A64B8, #000);
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Harmony', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #4A64B8,
+        0 0 10px #4A64B8, 
+        0 0 20px #4A64B8, 
+        0 0 40px #4A64B8, 
+        0 0 80px #4A64B8;
+    opacity: 0;
+    animation: neon-fade-in 2s ease-in-out forwards;
+}
+
+p {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.2em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.installation-table {
+    width: 80%;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.installation-table td {
+    padding: 20px;
+    border: 1px solid #333;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.installation-table .step-text {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.installation-table .step-action {
+    text-align: right;
+}
+
+.download-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4A64B8;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(74, 100, 184, 0.5), 0 0 20px rgba(74, 100, 184, 0.3), 0 0 30px rgba(74, 100, 184, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(74, 100, 184, 0.7), 0 0 30px rgba(74, 100, 184, 0.5), 0 0 40px rgba(74, 100, 184, 0.4);
+}
+
+.instruction-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes neon-fade-in {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    50% {
+        opacity: 0.5;
+        text-shadow: 
+            0 0 5px #4A64B8, 
+            0 0 10px #4A64B8, 
+            0 0 20px #4A64B8;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 
+            0 0 5px #4A64B8, 
+            0 0 10px #4A64B8, 
+            0 0 20px #4A64B8, 
+            0 0 40px #4A64B8, 
+            0 0 80px #4A64B8;
+    }
+}
